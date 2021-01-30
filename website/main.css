@@ -18,6 +18,9 @@
 .alphabet {
   grid-area: 2 / 1 / 3 / 2;
   background-color: green;
+    /*gdisplay: grid;
+  rid-template-columns: 70% 30%;
+  grid-template-rows: 60% 40%;*/
 }
 .graphic {
   grid-area: 1 / 2 / 3 / 3;
