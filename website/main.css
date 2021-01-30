@@ -1,0 +1,25 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 60% 40%;
+  gap: 0px 0px;
+  grid-template-areas:
+  "gameArea graphic"
+  "alphabet graphic";
+  height:100%;
+  /*grid-auto-rows: minmax(100px, auto); */
+}
+
+.gameArea {
+  grid-area: 1 / 1 / 3 / 3;
+  background-color: red;
+  padding: 100px 0;
+}
+.alphabet {
+  grid-area: 2 / 1 / 3 / 2;
+  background-color: green;
+}
+.graphic {
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: blue;
+}
