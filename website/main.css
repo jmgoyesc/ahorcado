@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: 60% 40%;
-  gap: 0px 0px;
+  gap: 0% 0%;
   grid-template-areas:
-  "gameArea graphic"
-  "alphabet graphic";
-  height:100%;
+    "gameArea graphic"
+    "alphabet graphic";
+  height: 100%;
   /*grid-auto-rows: minmax(100px, auto); */
 }
 
@@ -21,14 +21,14 @@
   padding: 3% 3%;
   display: grid;
   /*min-height: 10em;*/
-  vertical-align: middle
+  vertical-align: middle;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   grid-template-rows: 30% 30% 30%;
   gap: 10px 10px;
   grid-template-areas:
-  "A B C D E F G H I"
-  "J K L M N Ñ O P Q"
-  "R S T U V W X Y Z";
+    "A B C D E F G H I"
+    "J K L M N Ñ O P Q"
+    "R S T U V W X Y Z";
 }
 .graphic {
   grid-area: 1 / 2 / 3 / 3;
@@ -37,13 +37,12 @@
 }
 
 .letter {
-  border:solid 1px coral;
+  border: solid 1px coral;
   position: relative;
   top: 50%;
   left: 50%;
   margin-top: 5%;
-  transform: translate(-50%, -50%)
-
+  transform: translate(-50%, -50%);
 }
 
 .letter p {
@@ -54,5 +53,5 @@
   top: 50%;
   left: 50%;
   margin-top: 5%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
