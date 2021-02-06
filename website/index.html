@@ -1,114 +1,128 @@
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Everything is incoded in utf. What characteres can we use -->
+    <meta
+      name="description"
+      content="Ahorcado: Juego para amigos, familia, parejas. Adivina la palabra."
+    />
+    <meta
+      name="keywords"
+      content="Ahorcado, online juegos, juegos familia, juegos amigos, juegos pareja"
+    />
+    <meta name="author" content="Juan Manuel Goyes & Cielo Gonzalez" />
+    <title>Ahorcado.EsFacil</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="letter_selector.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8"> <!-- Everything is incoded in utf. What characteres can we use -->
-  <meta name="description" content="Ahorcado: Juego para amigos, familia, parejas. Adivina la palabra.">
-  <meta name="keywords" content="Ahorcado, online juegos, juegos familia, juegos amigos, juegos pareja">
-  <meta name="author" content="Juan Manuel Goyes & Cielo Gonzalez">
-  <title>Ahorcado.EsFacil</title>
-  <link rel="stylesheet" href="main.css">
-  <script src="letter_selector.js"></script>
-</head>
+  <body>
+    <div class="wrapper">
+      <div class="gameArea">
+        <form class="fnumberLetters" action="index.html" method="post">
+          <label for="fnumberLetters_name">Cantidad de letras:</label>
+          <input
+            type="text"
+            id="fnumberLetters_name"
+            name="fnumberLetters_name"
+          />
+          <input type="button" value="Aceptar" />
+          <h1></h1>
+        </form>
+      </div>
 
-<body>
-  <div class="wrapper">
+      <div class="alphabet">
+        <div class="letter" id="letter_A" onclick="select_letter(this)">
+          <p>A</p>
+        </div>
+        <div class="letter" id="letter_B" onclick="select_letter(this)">
+          <p>B</p>
+        </div>
+        <div class="letter" id="letter_C" onclick="select_letter(this)">
+          <p>C</p>
+        </div>
+        <div class="letter" id="letter_D" onclick="select_letter(this)">
+          <p>D</p>
+        </div>
+        <div class="letter" id="letter_E" onclick="select_letter(this)">
+          <p>E</p>
+        </div>
+        <div class="letter" id="letter_F" onclick="select_letter(this)">
+          <p>F</p>
+        </div>
+        <div class="letter" id="letter_G" onclick="select_letter(this)">
+          <p>G</p>
+        </div>
+        <div class="letter" id="letter_H" onclick="select_letter(this)">
+          <p>H</p>
+        </div>
+        <div class="letter" id="letter_I" onclick="select_letter(this)">
+          <p>I</p>
+        </div>
+        <div class="letter" id="letter_J" onclick="select_letter(this)">
+          <p>J</p>
+        </div>
+        <div class="letter" id="letter_K" onclick="select_letter(this)">
+          <p>K</p>
+        </div>
+        <div class="letter" id="letter_L" onclick="select_letter(this)">
+          <p>L</p>
+        </div>
+        <div class="letter" id="letter_M" onclick="select_letter(this)">
+          <p>M</p>
+        </div>
+        <div class="letter" id="letter_N" onclick="select_letter(this)">
+          <p>N</p>
+        </div>
+        <div class="letter" id="letter_Ñ" onclick="select_letter(this)">
+          <p>Ñ</p>
+        </div>
+        <div class="letter" id="letter_O" onclick="select_letter(this)">
+          <p>O</p>
+        </div>
+        <div class="letter" id="letter_P" onclick="select_letter(this)">
+          <p>P</p>
+        </div>
+        <div class="letter" id="letter_Q" onclick="select_letter(this)">
+          <p>Q</p>
+        </div>
+        <div class="letter" id="letter_R" onclick="select_letter(this)">
+          <p>R</p>
+        </div>
+        <div class="letter" id="letter_S" onclick="select_letter(this)">
+          <p>S</p>
+        </div>
+        <div class="letter" id="letter_T" onclick="select_letter(this)">
+          <p>T</p>
+        </div>
+        <div class="letter" id="letter_U" onclick="select_letter(this)">
+          <p>U</p>
+        </div>
+        <div class="letter" id="letter_V" onclick="select_letter(this)">
+          <p>V</p>
+        </div>
+        <div class="letter" id="letter_W" onclick="select_letter(this)">
+          <p>W</p>
+        </div>
+        <div class="letter" id="letter_X" onclick="select_letter(this)">
+          <p>X</p>
+        </div>
+        <div class="letter" id="letter_Y" onclick="select_letter(this)">
+          <p>Y</p>
+        </div>
+        <div class="letter" id="letter_Z" onclick="select_letter(this)">
+          <p>Z</p>
+        </div>
+      </div>
 
-    <div class="gameArea">
-      <form class="fnumberLetters" action="index.html" method="post">
-        <label for="fnumberLetters_name">Number of Letters:</label><br>
-        <input type="text" id="fnumberLetters_name" name="fnumberLetters_name"><br>
-        <input type="button" value="Aceptar">
-        <h1></h1>
-      </form>
+      <div class="graphic">
+        <img
+          id="gallows_image"
+          class="gallow-picture"
+          src="./img/Gallows1.png"
+          alt="Horca, ahorcado, gallows"
+        />
+      </div>
     </div>
-
-    <div class="alphabet">
-      <div class="letter" id="letter_A" onclick="select_letter(this)">
-        <p>A</p>
-      </div>
-      <div class="letter" id="letter_B" onclick="select_letter(this)">
-        <p>B</p>
-      </div>
-      <div class="letter" id="letter_C" onclick="select_letter(this)">
-        <p>C</p>
-      </div>
-      <div class="letter" id="letter_D" onclick="select_letter(this)">
-        <p>D</p>
-      </div>
-      <div class="letter" id="letter_E" onclick="select_letter(this)">
-        <p>E</p>
-      </div>
-      <div class="letter" id="letter_F" onclick="select_letter(this)">
-        <p>F</p>
-      </div>
-      <div class="letter" id="letter_G" onclick="select_letter(this)">
-        <p>G</p>
-      </div>
-      <div class="letter" id="letter_H" onclick="select_letter(this)">
-        <p>H</p>
-      </div>
-      <div class="letter" id="letter_I" onclick="select_letter(this)">
-        <p>I</p>
-      </div>
-      <div class="letter" id="letter_J" onclick="select_letter(this)">
-        <p>J</p>
-      </div>
-      <div class="letter" id="letter_K" onclick="select_letter(this)">
-        <p>K</p>
-      </div>
-      <div class="letter" id="letter_L" onclick="select_letter(this)">
-        <p>L</p>
-      </div>
-      <div class="letter" id="letter_M" onclick="select_letter(this)">
-        <p>M</p>
-      </div>
-      <div class="letter" id="letter_N" onclick="select_letter(this)">
-        <p>N</p>
-      </div>
-      <div class="letter" id="letter_Ñ" onclick="select_letter(this)">
-        <p>Ñ</p>
-      </div>
-      <div class="letter" id="letter_O" onclick="select_letter(this)">
-        <p>O</p>
-      </div>
-      <div class="letter" id="letter_P" onclick="select_letter(this)">
-        <p>P</p>
-      </div>
-      <div class="letter" id="letter_Q" onclick="select_letter(this)">
-        <p>Q</p>
-      </div>
-      <div class="letter" id="letter_R" onclick="select_letter(this)">
-        <p>R</p>
-      </div>
-      <div class="letter" id="letter_S" onclick="select_letter(this)">
-        <p>S</p>
-      </div>
-      <div class="letter" id="letter_T" onclick="select_letter(this)">
-        <p>T</p>
-      </div>
-      <div class="letter" id="letter_U" onclick="select_letter(this)">
-        <p>U</p>
-      </div>
-      <div class="letter" id="letter_V" onclick="select_letter(this)">
-        <p>V</p>
-      </div>
-      <div class="letter" id="letter_W" onclick="select_letter(this)">
-        <p>W</p>
-      </div>
-      <div class="letter" id="letter_X" onclick="select_letter(this)">
-        <p>X</p>
-      </div>
-      <div class="letter" id="letter_Y" onclick="select_letter(this)">
-        <p>Y</p>
-      </div>
-      <div class="letter" id="letter_Z" onclick="select_letter(this)">
-        <p>Z</p>
-      </div>
-    </div>
-    <div class="graphic">graphic</div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
