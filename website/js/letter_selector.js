@@ -8,6 +8,7 @@ function select_letter(selected_element) {
   if (r == true) {
     txt = "La letra " + selected_letter + ", SI está en la palabra.";
     console.log(txt);
+    current_letter=selected_letter;
   } else {
     txt = "La letra " + selected_letter + ",  NO está en la palabra";
     console.log(txt);
