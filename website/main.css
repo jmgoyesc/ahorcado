@@ -37,7 +37,8 @@
 }
 
 .letter {
-  border: solid 1px coral;
+  /*border-bottom: solid 1px darkblue;*/
+  border: solid 1px brown;
   position: relative;
   top: 50%;
   left: 50%;
@@ -80,4 +81,26 @@
 .gallow-picture {
   width: 90%;
   height: 90%;
+}
+
+.line {
+  border-bottom: solid 3px black;
+  position: relative;
+  width: 6%;
+  height: 6%;
+  top: 50%;
+  left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.line p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: 5%;
+  transform: translate(-50%, -60%);
 }

@@ -14,21 +14,37 @@
     <title>Ahorcado.EsFacil</title>
     <link rel="stylesheet" href="main.css" />
     <script src="letter_selector.js"></script>
+    <script src="draw_lines.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
       <div class="gameArea">
-        <form class="fnumberLetters" action="index.html" method="post">
-          <label for="fnumberLetters_name">Cantidad de letras:</label>
+        <form
+          class="amountLetters"
+          id="amountLetters"
+          action="index.html"
+          method="post"
+        >
+          <label for="amountLetters_number"
+            ><strong>Cantidad de letras:</strong></label
+          >
           <input
             type="text"
-            id="fnumberLetters_name"
-            name="fnumberLetters_name"
+            id="amountLetters_number"
+            name="amountLetters_number"
           />
-          <input type="button" value="Aceptar" />
+          <input
+            type="button"
+            id="aceptar"
+            value="Aceptar"
+            onclick="draw_lines()"
+          />
           <h1></h1>
         </form>
+        <div class="line" id="line_1" style="display:none">
+          <p>A</p>
+        </div>
       </div>
 
       <div class="alphabet">
