@@ -1,0 +1,8 @@
+{
+    "game": "1",
+    "status": "IN_PROGRESS | TERMINATED",
+    "word_letters": ["A", "_", "_", "A"],
+    "word_size": 4,
+    "hangman_level": 1,
+    "used_letters": ["A", "B"]
+}
